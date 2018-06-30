@@ -1,0 +1,207 @@
+2018-06-27 15:29:31 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: myheadler)
+2018-06-27 15:29:31 [scrapy.utils.log] INFO: Versions: lxml 3.7.3.0, libxml2 2.9.4, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 17:26:49) [MSC v.1900 32 bit (Intel)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-10-10.0.10586-SP0
+2018-06-27 15:29:31 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'myheadler', 'LOG_FILE': 'headlerlog.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'myheadler.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['myheadler.spiders']}
+2018-06-27 15:29:31 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-06-27 15:29:32 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'myheadler.middlewares.RandomUserAgent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-06-27 15:29:32 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-06-27 15:29:32 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-06-27 15:29:32 [scrapy.core.engine] INFO: Spider opened
+2018-06-27 15:29:32 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-06-27 15:29:33 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 http://www.xicidaili.com/>: HTTP status code is not handled or not allowed
+2018-06-27 15:29:33 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-06-27 15:29:33 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1326,
+ 'downloader/request_count': 6,
+ 'downloader/request_method_count/GET': 6,
+ 'downloader/response_bytes': 1998,
+ 'downloader/response_count': 6,
+ 'downloader/response_status_count/503': 6,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 6, 27, 7, 29, 33, 201345),
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/503': 1,
+ 'log_count/INFO': 8,
+ 'response_received_count': 2,
+ 'retry/count': 4,
+ 'retry/max_reached': 2,
+ 'retry/reason_count/503 Service Unavailable': 4,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2018, 6, 27, 7, 29, 32, 832298)}
+2018-06-27 15:29:33 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-06-27 15:33:02 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: myheadler)
+2018-06-27 15:33:02 [scrapy.utils.log] INFO: Versions: lxml 3.7.3.0, libxml2 2.9.4, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 17:26:49) [MSC v.1900 32 bit (Intel)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-10-10.0.10586-SP0
+2018-06-27 15:33:03 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'myheadler', 'LOG_FILE': 'headlerlog.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'myheadler.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['myheadler.spiders']}
+2018-06-27 15:33:03 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-06-27 15:33:03 [twisted] CRITICAL: Unhandled error in Deferred:
+2018-06-27 15:33:03 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "c:\users\administrator\appdata\local\programs\python\python36-32\lib\site-packages\scrapy\utils\misc.py", line 47, in load_object
+    obj = getattr(mod, name)
+AttributeError: module 'myheadler.middlewares' has no attribute 'RandomUserProxy'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\administrator\appdata\local\programs\python\python36-32\lib\site-packages\twisted\internet\defer.py", line 1386, in _inlineCallbacks
+    result = g.send(result)
+  File "c:\users\administrator\appdata\local\programs\python\python36-32\lib\site-packages\scrapy\crawler.py", line 80, in crawl
+    self.engine = self._create_engine()
+  File "c:\users\administrator\appdata\local\programs\python\python36-32\lib\site-packages\scrapy\crawler.py", line 105, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "c:\users\administrator\appdata\local\programs\python\python36-32\lib\site-packages\scrapy\core\engine.py", line 69, in __init__
+    self.downloader = downloader_cls(crawler)
+  File "c:\users\administrator\appdata\local\programs\python\python36-32\lib\site-packages\scrapy\core\downloader\__init__.py", line 88, in __init__
+    self.middleware = DownloaderMiddlewareManager.from_crawler(crawler)
+  File "c:\users\administrator\appdata\local\programs\python\python36-32\lib\site-packages\scrapy\middleware.py", line 58, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "c:\users\administrator\appdata\local\programs\python\python36-32\lib\site-packages\scrapy\middleware.py", line 34, in from_settings
+    mwcls = load_object(clspath)
+  File "c:\users\administrator\appdata\local\programs\python\python36-32\lib\site-packages\scrapy\utils\misc.py", line 49, in load_object
+    raise NameError("Module '%s' doesn't define any object named '%s'" % (module, name))
+NameError: Module 'myheadler.middlewares' doesn't define any object named 'RandomUserProxy'
+2018-06-27 15:35:24 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: myheadler)
+2018-06-27 15:35:24 [scrapy.utils.log] INFO: Versions: lxml 3.7.3.0, libxml2 2.9.4, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 17:26:49) [MSC v.1900 32 bit (Intel)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-10-10.0.10586-SP0
+2018-06-27 15:35:24 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'myheadler', 'LOG_FILE': 'headlerlog.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'myheadler.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['myheadler.spiders']}
+2018-06-27 15:35:24 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-06-27 15:35:25 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'myheadler.middlewares.RandomProxy',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-06-27 15:35:25 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-06-27 15:35:25 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-06-27 15:35:25 [scrapy.core.engine] INFO: Spider opened
+2018-06-27 15:35:25 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-06-27 15:35:26 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 http://www.xicidaili.com/>: HTTP status code is not handled or not allowed
+2018-06-27 15:35:26 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-06-27 15:35:26 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1326,
+ 'downloader/request_count': 6,
+ 'downloader/request_method_count/GET': 6,
+ 'downloader/response_bytes': 1998,
+ 'downloader/response_count': 6,
+ 'downloader/response_status_count/503': 6,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 6, 27, 7, 35, 26, 16435),
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/503': 1,
+ 'log_count/INFO': 8,
+ 'response_received_count': 2,
+ 'retry/count': 4,
+ 'retry/max_reached': 2,
+ 'retry/reason_count/503 Service Unavailable': 4,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2018, 6, 27, 7, 35, 25, 670391)}
+2018-06-27 15:35:26 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-06-27 16:27:49 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: myheadler)
+2018-06-27 16:27:49 [scrapy.utils.log] INFO: Versions: lxml 3.7.3.0, libxml2 2.9.4, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 17:26:49) [MSC v.1900 32 bit (Intel)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-10-10.0.10586-SP0
+2018-06-27 16:27:49 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'myheadler', 'DOWNLOAD_DELAY': 3, 'LOG_FILE': 'headlerlog.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'myheadler.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['myheadler.spiders']}
+2018-06-27 16:27:50 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-06-27 16:27:51 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'myheadler.middlewares.RandomProxy',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-06-27 16:27:51 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-06-27 16:27:51 [scrapy.middleware] INFO: Enabled item pipelines:
+['myheadler.pipelines.MyheadlerPipeline']
+2018-06-27 16:27:51 [scrapy.core.engine] INFO: Spider opened
+2018-06-27 16:27:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-06-27 16:27:52 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET http://www.xicidaili.com/robots.txt>: 'user_passwd'
+Traceback (most recent call last):
+  File "c:\users\administrator\appdata\local\programs\python\python36-32\lib\site-packages\twisted\internet\defer.py", line 1386, in _inlineCallbacks
+    result = g.send(result)
+  File "c:\users\administrator\appdata\local\programs\python\python36-32\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "E:\test\myheadler\myheadler\middlewares.py", line 117, in process_request
+    if proxy["user_passwd"] is None:
+KeyError: 'user_passwd'
+2018-06-27 16:27:52 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.xicidaili.com/nt/1>
+Traceback (most recent call last):
+  File "c:\users\administrator\appdata\local\programs\python\python36-32\lib\site-packages\twisted\internet\defer.py", line 1386, in _inlineCallbacks
+    result = g.send(result)
+  File "c:\users\administrator\appdata\local\programs\python\python36-32\lib\site-packages\scrapy\core\downloader\middleware.py", line 37, in process_request
+    response = yield method(request=request, spider=spider)
+  File "E:\test\myheadler\myheadler\middlewares.py", line 117, in process_request
+    if proxy["user_passwd"] is None:
+KeyError: 'user_passwd'
+2018-06-27 16:27:52 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-06-27 16:27:52 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 2,
+ 'downloader/exception_type_count/builtins.KeyError': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 6, 27, 8, 27, 52, 279209),
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 7,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 6, 27, 8, 27, 51, 899160)}
+2018-06-27 16:27:52 [scrapy.core.engine] INFO: Spider closed (finished)
