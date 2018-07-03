@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="loading">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+{#<link rel="apple-touch-icon-precomposed" href="http://www.17sucai.com/static/images/favicon.ico">#}
+<script>
+var logined = 0
+</script>
+<title>老司机专车</title>
+</head>
+
+<body style="text-align: center">
+{#<script>#}
+{#var now_page = 1,#}
+{#search_value = '';#}
+{#</script>#}
+
+	<div id="header">
+		<div class="wrap">
+			<!-- <i class="menu_open"></i> -->
+			<div class="logo"><b>动态全览</b></div>
+			<!-- <i class="search_open"></i> -->
+		</div>
+		<div class="logo_msk"></div>
+	</div>
+	<div id="container">
+		<di
+		v id="content">	
+			<div id="list">
+						<div class="pd5">
+						    <div class="article_ct">
+                            {% for i in v1 %}
+                            <p style="text-align: center">{{ i.name }}</p>
+						    <p><img src={{ i.url }} /></p>
+                            {% endfor %}
+						</div>
+				<div class="list_loading"><i></i><span>努力加载中...</span></div>
+			</div></div>
+
+	<script language="javascript" src="/static/js/zepto.min.js"></script>
+	<script language="javascript" src="/static/js/fx.js"></script>
+	<script language="javascript" src="/static/js/script.js"></script>
+	
+</body>
+</html>
