@@ -28,7 +28,7 @@ DOWNLOADER_MIDDLEWARES = {
 	#请求头
    'nhb.middlewares.RandomUserAgent': 100,
 	#代理ip
-# 'nhb.middlewares.RandomProxy': 200,
+	'nhb.middlewares.RandomProxy': 200,
 }
 
 #请求列表
@@ -43,14 +43,21 @@ USER_AGENTS = [
 
 #代理ip列表
 PROXIES = [
-	{"ip_port":"	114.228.75.5:6666","user_passwd":""},
+	{"ip_port":"121.17.80.99:9000","user_passwd":""},
 	#代理ip无密码
-	{"ip_port":"60.216.177.152:8118","user_passwd":""},
+	{"ip_port":"122.72.18.35:80","user_passwd":""},
 	#代理ip有密码
 	# {"ip_port":"123.139.56.238:9999","user_passwd":"root:admin"}
 ]
 
 IMAGES_STORE ="images"
+
+#见名知意
+MYSQL_HOST="192.168.100.9"
+MYSQL_PORT=3306
+MYSQL_USER="root"
+MYSQL_PASSWD="01"
+MYSQL_DB="gif"
 # Configure a delay for requests for the same website (default: 0)
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs

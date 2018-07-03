@@ -8,11 +8,12 @@ from nhb.items import NhbItem
 
 class GifSpider(CrawlSpider):
     name = 'gif'
-    allowed_domains = ['www.neihan8.com']
-    start_urls = ['https://www.neihan8.com/gif/index.html']
+    allowed_domains = ['neihanpa.com']
+    start_urls = ['http://www.neihanpa.com/gif/index.html']
 
     rules = (
-        Rule(LinkExtractor(allow=r'/index(_\d)*.html'), callback='parse_item', follow=True),
+        Rule(LinkExtractor(allow=r'/index(_\d+)*.html'), callback='parse_item', follow=True),
+        Rule(LinkExtractor(allow=r'/index(_\d+)*.html'), callback='parse_item', follow=True),
     )
 
     def parse_item(self, response):
