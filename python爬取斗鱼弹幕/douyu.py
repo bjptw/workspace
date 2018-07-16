@@ -75,7 +75,7 @@ def DM_start(roomid,barrage_num):
     room_name = get_room_name(roomid)
     print('已连接至{}的直播间'.format(room_name))
     barrage_list = []
-    barrage_list.append(['昵称', '等级', '弹幕'])
+    barrage_list.append(['等级', '昵称', '弹幕'])
     print("弹幕正在获取中...")
 
     flag = True
@@ -105,8 +105,6 @@ def DM_start(roomid,barrage_num):
                     print('已成功获得%d条弹幕' % (barrages - 1))
                     flag = False
                     break
-    global setoff
-    setoff = 0
     #制作词云
     all_barrages = ''
     for bl in barrage_list:
@@ -140,8 +138,6 @@ def keeplive():
         send_req_msg(msg)
         print('发送心跳包')
         time.sleep(45)
-        if setoff == 0:
-            break
 
 
 def logout():
@@ -177,8 +173,6 @@ if __name__ == '__main__':
     # 开启signal捕捉
     # signal.signal(signal.SIGINT, signal_handler)
 
-    # 开关
-    setoff = 1
     # 开启弹幕和心跳进程
     p1 = multiprocessing.Process(target=DM_start, args=(room_id, barrage_num))
     p2 = multiprocessing.Process(target=keeplive)
