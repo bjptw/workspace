@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/my51JobDwt.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>招聘平台</title>
+
+<link rel="stylesheet" type="text/css" href="/static/job.css" />
+
+</head>
+
+<body>
+
+<div class="bodydwt">
+<div class="headdwt">
+	<!-- <div class="headerleftdwt"><img src="images/logo.gif" /></div> -->
+    <div class="headerrightdwt">
+        <!-- <a href="login.html" name="pic"><img src="images/menu1-2.gif" class="imgheaderdwt" /></a>
+        <a href="search.html" name="pic"><img src="images/menu2-2.gif" class="imgheaderdwt" /></a>
+        <a href="intro.html" name="pic"><img src="images/menu3-2.gif" class="imgheaderdwt" /></a> -->
+    </div>
+</div>
+<!-- InstanceBeginEditable name="EditRegion3" -->
+<!--菜单栏开始-->
+
+<div class="menuBar">
+	公司招聘网页
+</div>
+<!--菜单栏结束-->
+
+<div id="cenCom" class="cenCom">
+        {% load pagination_tags %}
+        {% autopaginate v1 15 %}
+        <div id="cen22Com" class="cen22Com" style="z-index:-10">
+        	<!-- <div id="scrollPic" style="height:65px; width:520px; margin-top:2px; z-index:-10">
+            	<img src="images/scroll1.jpg" width="520" style="z-index:-10" />
+            </div> -->
+            <div id="name1" style="width:520px; height:12px; margin-top:10px; text-align:left; display:block; z-index:-10">
+            	<img src="/static/images/company-arrow.gif" />
+                <span style="color:#FF7000; font-weight:bold; font-size:14px; margin-left:5px">热点招聘</span>
+            </div>
+
+            <div id="table1" style="font-size:12px; height:500px; width:520px; margin-top:20px; display:block; z-index:-10">
+                <table cellpadding="0" cellspacing="1" style="height:500px; width:800px;">
+                    <tr>
+                        <th style="width:60px">
+                            发布时间
+                        </th>
+                        <th style="width:150px">
+                            职位名称
+                        </th>
+                        <th style="width:150px;">
+                            薪资
+                        </th>
+                        <th style="width:40px">
+                            公司名称
+                        </th>
+                        <th style="width:60px">
+                            地点
+                        </th>
+                        <th style="width:60px">
+                            跳转链接
+                        </th>
+                    </tr>
+
+                    {% for i in v1 %}
+                    <tr style="background-color:#FBFAFF;">
+                        <td style="border-bottom:1px #DCE2EE solid">
+                            {{ i.up_time }}
+                        </td>
+                        <td style="border-bottom:1px #DCE2EE solid">
+                            {{ i.position }}
+                        </td>
+                        <td style="border-bottom:1px #DCE2EE solid">
+                            {{ i.pay }}
+                        </td>
+                        <td style="border-bottom:1px #DCE2EE solid">
+                            {{ i.name }}
+                        </td>
+                        <td style="border-bottom:1px #DCE2EE solid">
+                            {{ i.addr }}
+                        </td>
+                        <td style="border-bottom:1px #DCE2EE solid">
+                            <a target='_blank' href={{ i.url }}>链接</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+        {% paginate using "/templates/pagination/pagination.html" %}
+        <!--右边结束-->
+	</div>
+	<!--中间结束-->
+</div>
+<div class="divdwt">
+	<!-- 网站导航&nbsp;&nbsp;|&nbsp;&nbsp;<a href="index.html" class="adwt">网站首页</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="search.html" class="adwt">职位搜索</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="login.html" class="adwt">Myjob</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="register.html" class="adwt">用户注册</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="login.html" class="adwt">用户登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="intro.html" class="adwt">简历管理</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="company.html" class="adwt">招聘公司</a> -->
+</div>
+<div>
+  <!-- <span class="spandwt">人才招聘&nbsp;Email:hr@51job.com</span>
+  <span class="spandwt">个人求职&nbsp;Email:club@51job.com&nbsp;&nbsp;或垂询:800-820-5100</span> -->
+  <span class="spandwt">未经本招聘网站同意，不得转载本网站之所有招聘信息及作品</span>
+  <!-- <span class="spandwt">无忧工作网版权所有&copy;1999-2007</span>
+  <span class="spandwt"><a href="index.html"><img src="images/bottom1.gif" class="imgdwt" /></a></span> -->
+</div>
+
+<!-- InstanceBeginEditable name="EditRegion4" -->
+
+<!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd --></html>
+
