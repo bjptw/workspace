@@ -14,6 +14,8 @@ jandan  ————用BeautifulSoup解析图片url
 
 python爬取斗鱼弹幕——使用多进程向斗鱼api模拟请求获取数据
 
-futurespider————分布式爬取51job的去重爬虫，后期准备扩展到各个招聘网站
+futurespider————分布式去重爬取51job招聘信息存入mysql的爬虫，后期准备扩展到各个招聘网站
 
-myjob   ————django写的爬取招聘信息的可视化平台，后期做一个综合的招聘信息展示页面
+myjob   ————采用django读取mysql数据库进行逻辑化的可视化平台，后期做一个综合的招聘信息展示页面
+
+EdmureBlog ——使用django搭建的交互式的个人博客网站，主要功能有用户的登录验证，博客主页，后台管理。
